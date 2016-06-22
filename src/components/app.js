@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nav from '../containers/nav_bar';
 import Works from '../containers/works'
+import Resume from '../containers/resume'
 
 export default class App extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class App extends Component {
           <h3 className="main-subheader">Software Developer</h3>
         </div>
         <Works />
+        <Resume />
       </div>
     );
   }
