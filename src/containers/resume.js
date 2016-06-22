@@ -6,7 +6,7 @@ export default class Resume extends Component {
       <div className="section">
         <h1 className="section-header">Resume</h1>
         <div className="resume-container">
-            <iframe height="900px" width="100%" src="../images/resume.pdf">something will go here</iframe>
+            <iframe height="950px" width="100%" src="../images/resume.pdf">something will go here</iframe>
         </div>
       </div>
     );

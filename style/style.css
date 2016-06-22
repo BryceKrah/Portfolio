@@ -1,4 +1,4 @@
-/************* NAV BAR *****************/
+/************* NAVBAR *****************/
 .navbar-container{
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   border: none;
 }
 
-/************* MAIN CONTENT *****************/
+/************* MAIN *****************/
 .main{
   text-align: center;
 }
@@ -32,8 +32,8 @@
   margin: 8px 5px;
   padding: 3px;
   border: 2px solid black;
-  width: 30%;
-  height: 350px;
+  width: 32%;
+  height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -68,7 +68,7 @@
 }
 .works-img{
   width: 100%;
-  height: 60%;
+  height: 55%;
 }
 
 /************* SECTION *****************/
@@ -77,6 +77,13 @@
 }
 .section-header {
   font-size: 30px;
+  font-weight: bold;
+  color: darkorange;
   padding-top: 5px;
   padding-left: 5px;
+}
+
+/************* ABOUT *****************/
+.about-header{
+  font-size: 25px;
 }

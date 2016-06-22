@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Nav from '../containers/nav_bar';
-import Works from '../containers/works'
-import Resume from '../containers/resume'
+import Works from '../containers/works';
+import Resume from '../containers/resume';
+import About from '../containers/about';
 
 export default class App extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class App extends Component {
         </div>
         <Works />
         <Resume />
+        <About />
       </div>
     );
   }
