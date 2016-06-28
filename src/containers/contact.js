@@ -4,9 +4,11 @@ import Nav from './nav_bar';
 export default class Contact extends Component {
   render() {
     return (
-      <div className="section">
+      <div>
         <Nav />
-        <div>Contact Me</div>
+        <div className="section">
+          <div>Contact Me</div>
+        </div>
       </div>
     );
   }

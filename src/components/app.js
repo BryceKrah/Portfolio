@@ -5,12 +5,6 @@ import About from '../containers/about';
 import Contact from '../containers/contact';
 
 export default class App extends Component {
-  constructor(props){
-    super(props);
-
-    this.state = { view: 'Hello' };
-    console.log(this.state);
-  }
 
   render() {
     return (

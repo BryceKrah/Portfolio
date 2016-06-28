@@ -5,15 +5,17 @@ import Nav from './nav_bar';
 export default class About extends Component {
   render() {
     return (
-      <div className="section">
+      <div>
         <Nav />
-        <h1 className="section-header">About</h1>
-        <div className="about-container">
-          <h1 className="about-header">Bryce Krah</h1>
-          <h1 className="about-header">Skills</h1>
-          <h1 className="about-header">Bio</h1>
+        <div className="section">
+          <h1 className="section-header">Bryce Krah</h1>
+          <div className="about-container">
+            <div>I am a software developer living in Brooklyn, New York. During the day I am interning as a Web Developer for ThomasNet where I collaborate with our design and marketing team to create modern, responsive websites for clients. At night, I work as a Code Advisor for Codecademy.com, providing mentorship to pro members where I review their code, debug issues, and help them get unstuck.</div>
+            <div>When I am not immersed in my coding endeavors, I am usually watching/playing basketball, or wreaking havoc in Halo.</div>
+          </div>
         </div>
       </div>
+
     );
   }
 }

@@ -3,13 +3,6 @@ import ReactRouter, { Link } from 'react-router';
 
 export default class Nav extends Component {
 
-  renderView(event){
-      event.preventDefault();
-      console.log(event.target.name);
-      console.log(this.props.viewShown);
-      //this.props.setState({ view: event.target.name })
-  }
-
   render() {
     return (
       <div className="navbar-container">
