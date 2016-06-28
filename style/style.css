@@ -4,33 +4,63 @@ body {
   background-size: cover;
 }
 
+* {
+  font-family: 'Cormorant Infant', serif;
+}
+
 /************* NAVBAR *****************/
 .navbar-container{
+  font-family: 'Athiti', sans-serif;
   display: flex;
   justify-content: space-between;
   margin: 3px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid rgba(244, 240, 240, 0.4);
 }
 .nav-item {
   margin-left: 1em;
+  margin-right: 1em;
   background-color: transparent;
   border: none;
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
+@media only screen and (max-width: 575px){
+  .nav-item {
+    margin-right: 0;
+  }
+}
 
 /************* MAIN *****************/
 .main{
   text-align: center;
-  background-color: rgba(244, 240, 240, 0.5);
-  height: 400px;
+  text-shadow: 1px 1px 10px #ffffcc;
+  color: black;
+  margin-top: 20px;
+;
+  /*background-color: rgba(244, 240, 240, 0.5);  b3d4fc(cool blue)
+  height: 400px;*/
 }
-
 .main-header{
   font-size: 75px;
+  animation-name: flash-color;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .main-subheader{
   font-size: 35px;
+  margin-top: -35px;
+  animation-name: flash-color;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flash-color {
+    0%   {text-shadow: 1px 1px 10px #ffffcc;}
+    50%  {text-shadow: 1px 1px 10px #b3d4fc;}
+    100% {text-shadow: 1px 1px 10px #ffffcc;}
 }
 
 /************* WORKS *****************/
@@ -41,13 +71,16 @@ body {
 }
 .works-item{
   margin: 8px 5px;
-  padding: 3px;
+  padding: 2px;
   border: 2px solid black;
-  width: 32%;
-  height: 500px;
+  width: 31%;
+  height: 550px;
   display: flex;
   justify-content: center;
   flex-flow: column;
+  overflow: hidden;
+  background-color: black;
+  color: white;
 }
 @media only screen and (max-width: 900px){
   .works-item{
@@ -55,7 +88,7 @@ body {
     padding: 3px;
     border: 2px solid black;
     width: 45%;
-    height: 250px;
+    height: 550px;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -67,10 +100,14 @@ body {
     padding: 3px;
     border: 2px solid black;
     width: 90%;
-    height: 250px;
+    height: 550px;
     display: flex;
     justify-content: center;
     flex-flow: column;
+  }
+  .works-header{
+    font-size: 24px;
+    text-align: center;
   }
 }
 .works-header{
@@ -79,12 +116,12 @@ body {
 }
 .works-img{
   width: 100%;
-  height: 55%;
+  height: 330px;
 }
 
 /************* SECTION *****************/
 .section{
-  background-color: #eee;
+  background-color: rgba(244,240,240, 0.7);
 }
 .section-header {
   font-size: 30px;
@@ -92,6 +129,8 @@ body {
   color: darkorange;
   padding-top: 5px;
   padding-left: 5px;
+  text-shadow: 1px 1px 10px #b3d4fc;
+  color: black;
 }
 
 /************* ABOUT *****************/

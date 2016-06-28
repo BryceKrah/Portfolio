@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
+import ReactRouter, { Link } from 'react-router';
 
 export default class Nav extends Component {
-
-  renderView(event){
-      event.preventDefault();
-      console.log(event.target.name);
-      console.log(this.props.viewShown);
-      //this.props.setState({ view: event.target.name })
-  }
 
   render() {
     return (
       <div className="navbar-container">
         <nav>
-          <a href="#" className="nav-item">Home</a>
+          <Link to="/" className="nav-item">Home</Link>
         </nav>
         <nav>
-          <a href="#about" className="nav-item">About</a>
-          <a href="#work" className="nav-item" name="work" onClick={this.renderView}>Work</a>
-          <a href="#skills" className="nav-item">Skills</a>
-          <a href="#" className="nav-item">Contact</a>
+          <Link to="about" className="nav-item">About</Link>
+          <Link to="work" className="nav-item" name="work">Work</Link>
+          <Link to="skills" className="nav-item">Skills</Link>
+          <Link to="contact" className="nav-item">Contact</Link>
         </nav>
       </div>
     );
