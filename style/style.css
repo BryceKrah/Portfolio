@@ -22,8 +22,9 @@ body {
 /************* MAIN *****************/
 .main{
   text-align: center;
-  background-color: rgba(244, 240, 240, 0.5);
-  height: 400px;
+  text-shadow: 1px 1px 20px rgb(244, 240, 240);
+  /*background-color: rgba(244, 240, 240, 0.5);
+  height: 400px;*/
 }
 
 .main-header{

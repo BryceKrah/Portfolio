@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
+import Nav from './nav_bar';
 
-export default class Works extends Component {
-  constructor(props){
-    super(props);
 
-  }
+export default class Work extends Component {
 
   render() {
     return (
       <div className="section">
+        <Nav />
         <h1 className="section-header">Works</h1>
         <div className="works-container">
           <div className="works-item">
