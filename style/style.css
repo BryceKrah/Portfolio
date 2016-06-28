@@ -121,12 +121,11 @@ body {
 
 /************* SECTION *****************/
 .section{
-  background-color: rgba(244,240,240, 0.7);
+  background-color: rgba(0,0,0, 0.8);
 }
 .section-header {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
-  color: darkorange;
   padding-top: 5px;
   padding-left: 5px;
   text-shadow: 1px 1px 10px #b3d4fc;
@@ -135,5 +134,16 @@ body {
 
 /************* ABOUT *****************/
 .about-header{
-  font-size: 25px;
+  font-size: 40px;
+}
+.about-container{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+.about-item{
+  width: 700px;
+  padding: 15px;
+  font-size: 24px;
+  color: rgb(244,240,240);
 }
