@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import Nav from '../containers/nav_bar';
-import Works from '../containers/work';
-import About from '../containers/about';
 import Icons from '../containers/icons';
 
-export default class App extends Component {
+
+export default class Err extends Component {
 
   render() {
     return (
       <div>
         <Nav />
         <div className="main">
-          <div className="main-header">Bryce Krah is a Software Developer in New York City.</div>
+          <div className="main-header">404 Error - Sorry that page does not exist!</div>
         </div>
-        <Works />
         <Icons />
       </div>
     );
