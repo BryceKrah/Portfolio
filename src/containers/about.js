@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './nav_bar';
+import Icons from './icons';
 
 
 export default class About extends Component {
@@ -8,7 +9,7 @@ export default class About extends Component {
       <div>
         <Nav />
         <div className="section">
-          <h1 className="section-header">Bryce Krah</h1>
+          <h1 className="section-header">Who am I?</h1>
           <div className="about-container">
             <div className="about-item">
               <div>I am a software developer living in Brooklyn, New York. During the day I am interning as a Web Developer for ThomasNet where I collaborate with our design and marketing team to create modern, responsive websites for clients.</div>
@@ -21,6 +22,7 @@ export default class About extends Component {
             </div>
           </div>
         </div>
+        <Icons />
       </div>
 
     );
